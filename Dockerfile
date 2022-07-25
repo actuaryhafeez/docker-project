@@ -1,6 +1,6 @@
-FROM centos:7
+FROM ubuntu:18.04
 MAINTAINER ahdatascientist@gmail.com
-RUN yum install -y httpd \
+RUN apt install -y apache2 \
 	zip \
 	unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page277/royal.zip /var/www/html/
